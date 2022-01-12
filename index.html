@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="history-value">result</p>
+                </div>
+                <div id="output">
+                    <input id="output-value" type="text">
+                </div>
+            </div>
+            <div id="keyboard">
+                <button class="operator" onclick="clearFn()" value="" id="clear">C</button>
+                <button class="operator" value="" onclick="backFn()" id="backspace">CE</button>
+                <button onclick="modFn()" class="operator" value="%" id="%">%</button>
+                <button onclick="plusFn()" class="operator" value="+" id="+">+</button>
+               
+                <button class="number" onclick="oneFn()" value="1" id="1">1</button>
+                <button class="number" onclick="twoFn()" value="2" id="2">2</button>
+                <button class="number" onclick="threeFn()" value="3" id="3">3</button>
+                <button onclick="minusFn()" class="operator" value="-" id="-">-</button> 
+              
+                <button class="number" onclick="fourFn()" value="4" id="4">4</button>
+                <button class="number" onclick="fiveFn()" value="5" id="5">5</button>
+                <button class="number" onclick="sixFn()" value="6" id="6">6</button>
+                <button onclick="mulFn()" class="operator" value="*" id="*">&times;</button>
+              
+                <button class="number" onclick="sevFn()" value="7" id="7">7</button>
+                <button class="number" onclick="eightFn()" value="8" id="8">8</button>
+                <button class="number" onclick="nineFn()" value="9" id="9">9</button>
+                <button onclick="devisionFn()" class="operator" value="/" id="/">&#247;</button>
+
+                <button class="empty" value="" id="empty"></button>
+                <button class="number" onclick="zeroFn()" value="0" id="0">0</button>
+                <button class="empty" value="" id="empty"></button>
+                <button onclick="equalFn()" class="operator" value="=" id="=">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+
+</html>
